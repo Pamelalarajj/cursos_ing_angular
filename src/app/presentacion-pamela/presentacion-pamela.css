@@ -1,0 +1,98 @@
+/* Contenedor raíz del componente en Angular (equivale a body) */
+:host {
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(ellipse at 18% 22%, rgba(116, 55, 190, 0.3), transparent 38%),
+        radial-gradient(ellipse at 82% 78%, rgba(75, 35, 145, 0.28), transparent 42%),
+        linear-gradient(135deg, #080711, #171024 55%, #090812);
+    color: #f1ecf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* El cuadro central */
+.tarjeta {
+    background: linear-gradient(145deg, rgba(33, 24, 49, 0.96), rgba(13, 12, 23, 0.97));
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(180, 130, 255, 0.35);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55), 0 0 28px rgba(129, 72, 196, 0.2);
+    text-align: center;
+}
+
+/* Estilo de la foto circular */
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ad79f7;
+    margin-bottom: 15px;
+}
+
+/* Títulos */
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fbf8ff;
+}
+
+.subtitulo {
+    color: #c49aff;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 25px;
+    border-bottom: 1px solid rgba(196, 154, 255, 0.35);
+    padding-bottom: 8px;
+}
+
+/* Texto de presentación */
+.descripcion {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #d3ccdf;
+}
+
+/* Lista de intereses */
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 25px 0;
+}
+
+.lista li {
+    background: rgba(119, 76, 166, 0.2);
+    border: 1px solid rgba(180, 130, 255, 0.15);
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Botón de contacto / regreso */
+.boton {
+    display: inline-block;
+    background-color: #7d48c5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #63349f;
+}
